@@ -1,0 +1,111 @@
+/* attribution */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(227, 14%, 44%); }
+
+/* General */
+
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fontSizaParagraph: 14px;
+
+}
+
+body {
+    padding: 10%;
+    background: var(--cream);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Card container */
+
+.cardContainer {
+    display: flex;
+    border-radius: 10px;
+    background: var(--white);
+    width: 760px;
+    
+}
+
+/* Card Left Side Image */
+
+.perfumImg {
+    border-radius: 10px 0px 0px 10px;
+    width: 380px;
+}
+
+/* Card Right Side */
+
+.cardRightSide {
+    margin: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.textType1 {
+    font-family: "Montserrat", sans-serif ;
+    font-weight:lighter;
+    color: var(--darkGrayishBlue);
+}
+
+.textType2 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.priceBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceNow {
+    color: var(--darkCyan);
+}
+
+.priceBefore {
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.cartButton {
+    display: flex;
+    border-radius: 10px;
+    background: var(--darkCyan);
+    border: 0px;
+    padding: 16px;
+    justify-content: center;
+    width: 320px;
+
+}
+
+.perfumeText {
+    letter-spacing: 8px;
+    font-size: var(--fontSizaParagraph);
+
+}
+
+.paragraphText {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.cartIcon {
+    margin-right: 12px;
+}
+
+.addToCartText {
+    color: var(--white);
+}
+
