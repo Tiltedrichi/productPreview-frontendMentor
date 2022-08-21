@@ -7,6 +7,7 @@
 
 :root {
     --darkCyan: hsl(158, 36%, 37%);
+    --darkestCyan: hsl(158, 40%, 20%);
     --cream: hsl(30, 38%, 92%);
     --veryDarkBlue: hsl(212, 21%, 14%);
     --darkGrayishBlue: hsl(228, 12%, 48%);
@@ -109,3 +110,53 @@ body {
     color: var(--white);
 }
 
+button:hover {
+    background-color: var(--darkestCyan);
+}
+
+footer {
+    position: absolute;
+    bottom:5px;
+}
+
+@media (max-width: 400px) {
+    .cardContainer {
+        display: inline-flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .perfumImg {
+        src: url(./images/image-product-mobile.jpg);
+            position: relative;
+            width: 350px;
+            top: -120px;
+            
+        
+    }
+
+    .imageContainer {
+        border-radius: 10px 10px 0px 0px;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+
+    }
+
+    .textType1 {
+        font-size: var(--fontSizaParagraph);
+    }
+
+    .textType2 {
+        font-size: 32px;
+    }
+
+    .priceBox {
+        justify-content: left;
+    }
+
+    .cardRightSide {
+        margin: 15px;
+        height: 325px;
+    }
+}
